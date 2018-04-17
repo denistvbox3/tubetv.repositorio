@@ -13,4 +13,87 @@
 		<platform>all</platform>
 	</extension>
 </addon>
+<addon id="plugin.video.tubetv"
+       name="[B][COLOR lime]tubetv[/COLOR] - [COLOR red]Filmes[/COLOR][COLOR blue] e [/COLOR][COLOR orange]Séries[/COLOR][/B]"
+       version="1.1"
+       provider-name="[COLOR yellow][B]Denistvbox[/B][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pt-br"></summary>
+    <description lang="pt-br"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.CubePlay" name="Cube Play" version="18.04.05" provider-name="CubePlay">
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">NetCine</summary>
+    <description lang="en">Addon modificado do PlaylistLoader 1.2.0 por Avigdor https://github.com/avigdork/xbmc-avigdork. Nao somos responsaveis por colocar o conteudo online, apenas indexamos. Para sugestoes e report de bugs nossa pagina no FB: [COLOR blue]http://fb.com/CubePlayKodi[/COLOR]</description>
+    <platform>all</platform>
+	<news>
+	</news>
+  </extension>
+</addon>
+<addon id="plugin.video.boxtv" name="boxtv" version="0.0.1" provider-name="denistvbox3">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">denistvbox3</summary>
+		<description lang="en">Full add-on description.</description>
+		<platform>all</platform>
+		<forum>http://www.noobsandnerds.com/support</forum>
+		<website>www.noobsandnerds.com</website>
+		<news></news>
+		<genre></genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+<addon id="plugin.video.tubevideos" name="[COLOR lime]tube[/COLOR][COLOR red]videos[/COLOR]" version="1.0.0" provider-name="tvbox3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+	
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+	
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Tubevideos</summary>
+    <description lang="en">Addon de videos do youtube</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
 </addons>
