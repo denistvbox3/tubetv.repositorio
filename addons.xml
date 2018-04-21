@@ -1,48 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.tubetv"
-       name="[B][COLOR lime]tubetv[/COLOR] - [COLOR red]Filmes[/COLOR][COLOR blue] e [/COLOR][COLOR orange]Séries[/COLOR][/B]"
-       version="1.1"
-       provider-name="[COLOR yellow][B]Denistvbox[/B][/COLOR]">
+<addon id="plugin.audio.mp3streams"
+       name="MP3 Streams"
+       version="1.2.4"
+       provider-name="kinkin, art by Marquerite">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="script.module.mutagen"/>
+        <import addon="script.module.requests" version="1.1.0"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>audio</provides>
+    </extension>
+
+	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming collection</summary>
+        <description>Browse and stream your favourite songs and albums</description>
+    </extension>
+
+</addon>
+
+<addon id="plugin.video.adultsonly" name="[B][COLOR red]ADULTS ONLY[/B][/COLOR]" version="1.0.0" provider-name="FOLIVER FOR KODI">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-	
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="pt-br"></summary>
-    <description lang="pt-br"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-<addon id="plugin.video.CubePlay" name="Cube Play" version="18.04.05" provider-name="CubePlay">
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">NetCine</summary>
-    <description lang="en">Addon modificado do PlaylistLoader 1.2.0 por Avigdor https://github.com/avigdork/xbmc-avigdork. Nao somos responsaveis por colocar o conteudo online, apenas indexamos. Para sugestoes e report de bugs nossa pagina no FB: [COLOR blue]http://fb.com/CubePlayKodi[/COLOR]</description>
+    <summary lang="en">Movies and Clips Adult</summary>
+    <description lang="en">Movies and Clips Adult</description>
     <platform>all</platform>
-	<news>
-	</news>
   </extension>
 </addon>
+
 <addon id="plugin.video.boxtv" name="boxtv" version="0.0.1" provider-name="denistvbox3">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -63,38 +60,20 @@
 		<video_preview></video_preview>
 	</extension>
 </addon>
-<addon id="plugin.video.tubevideos" name="[COLOR lime]tube[/COLOR][COLOR red]videos[/COLOR]" version="1.0.0" provider-name="tvbox3">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-	
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-	
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Tubevideos</summary>
-    <description lang="en">Addon de videos do youtube</description>
-    <platform>all</platform>
-    <forum></forum>
-    <website></website>
-  </extension>
-</addon>
-<addon id="plugin.video.adultsonly" name="[B][COLOR red]ADULTS ONLY[/B][/COLOR]" version="1.0.0" provider-name="FOLIVER FOR KODI">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
+
+<addon id="plugin.video.CubePlay" name="Cube Play" version="18.04.05" provider-name="CubePlay">
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Movies and Clips Adult</summary>
-    <description lang="en">Movies and Clips Adult</description>
+    <summary lang="en">NetCine</summary>
+    <description lang="en">Addon modificado do PlaylistLoader 1.2.0 por Avigdor https://github.com/avigdork/xbmc-avigdork. Nao somos responsaveis por colocar o conteudo online, apenas indexamos. Para sugestoes e report de bugs nossa pagina no FB: [COLOR blue]http://fb.com/CubePlayKodi[/COLOR]</description>
     <platform>all</platform>
+	<news>
+	</news>
   </extension>
 </addon>
+
 <addon id="plugin.video.playtube" name="Playtube" version="1.1.7" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -108,5 +87,71 @@
     <description lang="en">addon de listas </description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.tubetv"
+       name="[B][COLOR lime]tubetv[/COLOR] - [COLOR red]Filmes[/COLOR][COLOR blue] e [/COLOR][COLOR orange]SÃ©ries[/COLOR][/B]"
+       version="1.1"
+       provider-name="[COLOR yellow][B]Denistvbox[/B][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pt-br"></summary>
+    <description lang="pt-br"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tubevideos" name="[COLOR lime]tube[/COLOR][COLOR red]videos[/COLOR]" version="1.0.0" provider-name="tvbox3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Tubevideos</summary>
+    <description lang="en">Addon de videos do youtube</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="tubetv.repositorio" name="tubetv.repositorio" version="1.1" provider-name="tubetv">
+	<extension point="xbmc.addon.repository" name="tubetv.repositorio">
+		<info compressed="false">https://raw.githubusercontent.com/denistvbox3/tubetv.repositorio/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/denistvbox3/tubetv.repositorio/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/denistvbox3/tubetv.repositorio/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>top RepositÃ³rio</summary>
+		<description>Addon Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 </addons>
