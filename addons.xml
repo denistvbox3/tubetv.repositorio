@@ -26,6 +26,21 @@
 
 </addon>
 
+<addon id="plugin.program.supremebuildswizard" name="Supreme Builds Wizard" version="3.0.7" provider-name="KodiSkills">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Supreme Builds Wizard</summary>
+    <description lang="en">The Supreme Builds Wizard contains all official Supreme Builds, Add-ons, Apps, Maintenance Tools, Settings and more.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.adultsonly" name="[B][COLOR red]ADULTS ONLY[/B][/COLOR]" version="1.0.0" provider-name="FOLIVER FOR KODI">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
