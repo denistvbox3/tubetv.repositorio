@@ -203,7 +203,7 @@ em procura livre na internet.
 
 <addon id="plugin.video.evolutionmedia"
        name="[COLOR white] EVOLUTION [/COLOR][COLOR white] Tâˆš [/COLOR]"
-       version=" [COLOR white]1.3.1[/COLOR] "
+       version="1.3.1"
        provider-name="[B][COLOR red]TEC[/COLOR] [COLOR white]TV[/COLOR] ">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
