@@ -120,6 +120,53 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.AmerikanoTuga"
+       name="[COLOR red][B]AMERIKANO[/B][/COLOR][COLOR green][B]TUGA[/B][/COLOR]"
+       version="0.10"
+       provider-name="Amerikano Tuga">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+	<import addon="plugin.video.SportsDevil" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.repository" name="repository.AmerikanoTuga">
+		<info compressed="false">https://github.com/amerikanotech/repo/raw/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/amerikanotech/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/amerikanotech/repo/raw/master/zip/</datadir>
+	</extension>
+
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Amerikano Tuga</summary>
+    <description>
+        Todos os links disponibilizados no Addon estao disponiveis
+em procura livre na internet.
+
+    </description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.gif</fanart>
+        </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.boxtv" name="boxtv" version="0.0.1" provider-name="denistvbox3">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -154,17 +201,66 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.playtube" name="Playtube" version="1.1.7" provider-name="Avigdor">
+<addon id="plugin.video.evolutionmedia"
+       name="[COLOR white] EVOLUTION [/COLOR][COLOR white] Tâˆš [/COLOR]"
+       version=" [COLOR white]1.3.1[/COLOR] "
+       provider-name="[B][COLOR red]TEC[/COLOR] [COLOR white]TV[/COLOR] ">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="repository.xbmc-avigdork" />
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="f4m.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Playtube</summary>
-    <description lang="en">addon de listas </description>
+    <summary>[B][COLOR white]No Evolution Media Center VocÃª encontra a verdadeira evoluÃ§Ã£o do Kodi![/COLOR][/B]</summary>
+    <description lang="en">[B][COLOR yelow]EVOLUTION MEDIA Ã‰ Apenas Um AGREGADOR De Links E Assim Como O Google.com, Apenas Agrega E Organiza Os Links Externos. NÃ£o Somos ResponsÃ¡veis Pelos ConteÃºdos Encontrados Aqui.[/COLOR][/B]</description>
+    <disclaimer lang="en"></disclaimer>
+	<platform>all</platform>
+
+  </extension>
+</addon>
+
+<addon id="plugin.video.Point242"
+       name="Point242"
+       version="1.1"
+       provider-name="POINT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
